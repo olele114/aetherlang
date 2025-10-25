@@ -1,8 +1,29 @@
 [book]
-title = "AetherLang: 从语言到操作系统和虚拟化"
-authors = ["olele114"]
-language = "zh-cn"
-src = "src"
+title = "AetherLang生态系统"
+author = ["olele114"]
+description = "this is an book about AetherLang ecosystem."
+language = "zh-CN"  # 中文支持
+multilingual = false  # 单语言模式
 
+# 目录结构设置
+[build]
+build-dir = "book"  # 输出目录（GitHub Pages默认使用/docs或根目录）
+create-missing = true  # 自动生成缺失章节
+
+# 输出格式配置
 [output.html]
-git-repository-url = "https://olele114.github.io/aetherlang/zh/"
+theme = "light"  # 可选默认/自定义主题
+default-theme = "light"  # 默认主题模式
+preferred-dark-theme = "dark"  # 暗黑模式主题名
+git-repository-url = "https://github.com/olele114/aetherlang/"  # 添加"编辑本页"链接
+git-repository-icon = "fa-github"
+site-url = "https://olele114.github.io/aetherlang/"  # 重要！替换为你的实际URL
+no-section-label = false
+additional-css = ["custom.css"]  # 自定义CSS文件（可选）
+additional-js = ["custom.js"]    # FontAwesome图标
+
+# 搜索功能配置
+[output.html.search]
+enable = true
+indexing-command = "elasticlunr-rs"
+redirect = true
