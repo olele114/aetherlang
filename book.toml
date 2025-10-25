@@ -1,0 +1,15 @@
+[book]
+title = "AetherLang: 从语言到操作系统和虚拟化"
+authors = ["olele114"]
+language = "zh-cn"
+multilingual = true
+src = "src"
+
+[output.html]
+git-repository-url = "https://olele114.github.io/aetherlang/zh/"
+
+[[output.i18n.translations]]
+language = "en"
+translators = ["Google Translate"]
+title = "AetherLang: from programming language to opering system and vituralize"
+src = "translations/en"
